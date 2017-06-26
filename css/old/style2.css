@@ -1,0 +1,123 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background: rgb(242, 242, 242);
+  font-size: 12px;
+  margin: 0;
+}
+nav {
+  width: 100%;
+  overflow: hidden;
+  max-height: 50px;
+  background: #fff;
+
+}
+#logo {
+  margin-top: 3px;
+  margin-right: 100px;
+}
+#upload {
+  float: right;
+  margin-top: 8px;
+}
+#signin {
+  float: right;
+  margin-top: 5px;
+  margin-right: 40px;
+  margin-left: 10px;
+  padding: 8px;
+  border-radius: 3px;
+  background-color: #0063dc;
+  color: white;
+  font-size: 12px;
+  border-style: none;
+}
+#searchdiv {
+  display: inline;
+  margin-left: 20px;
+  max-width: 50%;
+  margin: 0 auto;
+}
+#searchbar {
+  display: inline-block;
+  height: 20px;
+  margin: 7px 0;
+  width: 50%;
+  padding: 0;
+  vertical-align: top;
+}
+#searchicon {
+  margin: 7px 0;
+  height: 25px;
+  vertical-align: top;
+}
+
+section, aside {
+  min-height: 100%;
+}
+section {
+  margin-top: 10px;
+  margin-left: 5%;
+  display: inline-block;
+  min-height: 100%;
+  width: 60%;
+}
+aside {
+  float: right;
+  width: 35%;
+}
+.intrinsic-container {
+  margin-left: auto;
+  position: relative;
+  height: 50%;
+  overflow: hidden;
+}
+.intrinsic-container-16x9 {
+  padding-bottom: 56.25%;
+}
+.intrinsic-container iframe {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#videotitle {
+  margin-top: 5px;
+  position: relative;
+  width: 100%;
+}
+#videodescription {
+  background: #fff;
+  padding: 10px;
+}
+#showmorebutton {
+  width: 100%;
+  background: Transparent;
+  border-style: solid none none none;
+  font-size: 10px;
+  padding-top: 10px;
+
+}
+#showmorebutton a {
+  text-decoration: none;
+  color: #807b7b;
+}
+#comments {
+  background: #fff;
+}
+#comments img {
+  margin-left: 15px;
+}
+#commentbox {
+  display: inline-block;
+  position: relative;
+
+  display: inline-block;
+  width: 80%;
+  height: 100%;
+  position: relative;
+}
+#commentbox input {
+  width: 100%;
+  height: 50px;
+}

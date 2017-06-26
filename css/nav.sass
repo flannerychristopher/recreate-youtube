@@ -1,0 +1,90 @@
+nav
+  background: $youtubewhite
+  @extend %flex
+  justify-content: space-between
+  align-items: center
+  flex-grow: 3
+  height: 48px
+
+  #logo
+    margin: 0 75px 0 25px
+
+  #search
+    @extend %flex
+    align-items: center
+    justify-content: flex-start
+    height: 30px
+    flex-grow: 2
+    border: 1px solid $youtubemidgray
+    border-radius: 0
+
+    input
+      font-size: 16px
+      flex-grow: 2
+      border-radius: 0
+      border: none
+      height: 25px
+      padding: 2px 10px
+      &:focus
+        border: 1px solid $youtubeblue
+
+    a
+      border-left: 1px solid $youtubemidgray
+      height: 30px
+      width: 60px
+      background: $youtubelightgray
+      @extend %flex
+      align-items: center
+      &:hover
+        background: $youtubegray
+      img
+        height: 20px
+        width: 20px
+        margin-left: 18px
+
+
+  #nav-buttons
+    @extend %flex
+    align-items: center
+    flex-grow: 5
+    justify-content: flex-end
+
+    button
+      background-color: $youtubeblue
+      border-color: $youtubeblue
+      color: white
+      padding: 8px 12px
+      border: none
+      border-radius: 2px
+      margin: 0 38px 0 15px
+      font-size: 11px
+      font-weight: 500
+      &:hover
+        background-color: $youtubedarkerblue
+    #upload, img
+      height: 23px
+      width: 45px
+
+#upload-tooltip
+  visibility: hidden
+  width: 20px
+  background: black
+  color: $youtubewhite
+  border-radius: 4px
+  padding: 5px
+  font-size: 12px
+
+#upload:hover #upload-tooltip
+  visibility: visible
+
+//
+// #searchicon
+//     height: 25px
+//     margin: 0
+//
+// #signin
+//     color: $youtubewhite
+//     background-color: $youtubeblue
+//     padding: 8px
+//     border-radius: 3px
+//     border-style: none

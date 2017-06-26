@@ -1,0 +1,84 @@
+nav, nav #search, nav #search a, nav #nav-buttons {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; }
+
+nav {
+  background: #fff;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 3;
+  height: 48px; }
+  nav #logo {
+    margin: 0 75px 0 25px; }
+  nav #search {
+    align-items: center;
+    justify-content: flex-start;
+    height: 30px;
+    flex-grow: 2;
+    border: 1px solid #ccc;
+    border-radius: 0; }
+    nav #search input {
+      font-size: 16px;
+      flex-grow: 2;
+      border-radius: 0;
+      border: none;
+      height: 25px;
+      padding: 2px 10px; }
+      nav #search input:focus {
+        border: 1px solid #167ac6; }
+    nav #search a {
+      border-left: 1px solid #ccc;
+      height: 30px;
+      width: 60px;
+      background: #f6f6f6;
+      align-items: center; }
+      nav #search a:hover {
+        background: #ddd; }
+      nav #search a img {
+        height: 20px;
+        width: 20px;
+        margin-left: 18px; }
+  nav #nav-buttons {
+    align-items: center;
+    flex-grow: 5;
+    justify-content: flex-end; }
+    nav #nav-buttons button {
+      background-color: #167ac6;
+      border-color: #167ac6;
+      color: white;
+      padding: 8px 12px;
+      border: none;
+      border-radius: 2px;
+      margin: 0 38px 0 15px;
+      font-size: 11px;
+      font-weight: 500; }
+      nav #nav-buttons button:hover {
+        background-color: #166aaa; }
+    nav #nav-buttons #upload, nav #nav-buttons img {
+      height: 23px;
+      width: 45px; }
+
+#upload-tooltip {
+  visibility: hidden;
+  width: 20px;
+  background: black;
+  color: #fff;
+  border-radius: 4px;
+  padding: 5px;
+  font-size: 12px; }
+
+#upload:hover #upload-tooltip {
+  visibility: visible; }
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #f6f6f6;
+  margin: 0; }
+
+section, aside, #left-margin {
+  display: none; }
+
+/*# sourceMappingURL=style.css.map */
