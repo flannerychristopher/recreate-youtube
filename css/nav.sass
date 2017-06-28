@@ -1,3 +1,17 @@
+@media (min-width: 650px)
+  #logodiv
+    margin: 0 75px 0 25px
+  #logosmall
+    display: none
+
+@media (max-width: 650px)
+  #hamburger
+    margin-left: 50px
+  #logo
+    display: none
+  #upload
+    display: none
+
 nav
   background: $youtubewhite
   @extend %flex
@@ -5,9 +19,11 @@ nav
   align-items: center
   flex-grow: 3
   height: 48px
+  overflow: hidden
 
-  #logo
-    margin: 0 75px 0 25px
+  #logodiv
+    @extend %flex
+    align-items: center
 
   #search
     @extend %flex
@@ -15,22 +31,25 @@ nav
     justify-content: flex-start
     height: 30px
     flex-grow: 2
+    flex-shrink: 3
     border: 1px solid $youtubemidgray
     border-radius: 0
 
-    input
+    #searchbox
       font-size: 16px
       flex-grow: 2
+
       border-radius: 0
       border: none
-      height: 25px
+      height: 28px
       padding: 2px 10px
       &:focus
         border: 1px solid $youtubeblue
 
-    a
+    #searchbutton
+      border: none
       border-left: 1px solid $youtubemidgray
-      height: 30px
+      height: 28px
       width: 60px
       background: $youtubelightgray
       @extend %flex
@@ -40,14 +59,14 @@ nav
       img
         height: 20px
         width: 20px
-        margin-left: 18px
-
+        margin-left: 12px
 
   #nav-buttons
     @extend %flex
     align-items: center
     flex-grow: 5
     justify-content: flex-end
+    flex-shrink: 1
 
     button
       background-color: $youtubeblue
