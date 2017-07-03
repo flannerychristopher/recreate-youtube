@@ -83,32 +83,77 @@
                     <img src='/img/dots.png'>More
                   </a>
                 </div>
-                <!-- <div id='likes'>
+                <div id='likes'>
                   <button>
                     <img src='/img/thumbsup.png'>1,025
                   </button>
                   <button>
                     <img src='/img/thumbsdown.png'>60
                   </button>
-                </div> -->
+                </div>
               </div>
-
-
             </div> <!-- .well -->
-
 
             <div class="well" id='videodescription'>
               <strong>Published on Dec 17, 2016</strong>
               <p>SNL skit december 17th, 2016. it's so accurate to what you can find in a dunks in parts of Boston, it's scary...well done Casey and SNL.</p>
-              <button id='showmorebutton'><a href='#'>SHOW MORE</a></button>
+              <button id='showmorebutton'>SHOW MORE</button>
             </div>
 
-            <div id='comments'>
-              <p>COMMENTS • 31</p>
-              <img src='img/blankavatar.png'>
-              <div id='commentbox'>
+            <div class="well" id='comments'>
+              <strong>COMMENTS &bull; 31</strong>
+              <div id='writecomment'>
+                <img src='img/blankavatar.png' class='usericon'>
                 <input type='text_area'></input>
               </div>
+            <!-- </div> -->
+
+            <div>
+
+              <select name="filtercomments" id='filtercomments'>
+                <option value="topcomments">Top comments</option>
+                <option value="newestcomments">Newest first</option>
+              </select>
+
+              <div class='commentwrapper'>
+                <div class='comment'>
+                  <div class="usericon">
+                    <span>M</span>
+                  </div>
+                  <div class='commenter'>
+                    <a href='#'>JG Meath<span>6 months ago</span></a>
+                    <span>No, really. This is Massachusetts. This is real.</span>
+                    <div>
+                      <span>Reply &bull; 30</span>
+                      <a href='#'>
+                        <img src='/img/thumbsup.png'>
+                      </a>
+                      <a href='#'>
+                        <img src='/img/thumbsdown.png'>
+                      </a>
+                    </div>
+                </div>
+              </div>
+              <div class='commentwrapper'>
+                <div class='comment'>
+                  <div class="usericon">
+                    <span>C</span>
+                  </div>
+                  <div class='commenter'>
+                    <a href='#'>J O<span>6 months ago</span></a>
+                    <span>funny. But not raunchy enough for true New Englanders. I have seen crazier mother fuckers than this at real Dunkin donuts. I like the cigarette out the door and the coffee cup at the windshield though! That's pretty accurate. Actually not an exaggeration. Have seen both in real life and crazier shit than that, even! haha﻿</span>
+                    <div>
+                      <span>Reply &bull; 27</span>
+                      <a href='#'>
+                        <img src='/img/thumbsup.png'>
+                      </a>
+                      <a href='#'>
+                        <img src='/img/thumbsdown.png'>
+                      </a>
+                    </div>
+                </div>
+              </div>
+
             </div>
 
           </section>
