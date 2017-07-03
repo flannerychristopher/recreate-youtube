@@ -5,22 +5,12 @@ $youtubedarkergray: #807b7b
 $youtubewhite: #fff
 $youtubeblue: #167ac6
 $youtubedarkerblue: #166aaa
-
-%flex
-  display: -webkit-box
-  display: -moz-box
-  display: -ms-flexbox
-  display: -webkit-flex
-  display: flex
+$youtubered: #bb0000
 
 html
-  -webkit-box-sizing: border-box
-  -moz-box-sizing: border-box
   box-sizing: border-box
 
 *, *:before, *:after
-  -webkit-box-sizing: inherit
-  -moz-box-sizing: inherit
   box-sizing: inherit
 
 body
@@ -28,9 +18,9 @@ body
   background: $youtubelightgray
   margin: 0
 
-@import 'flex'
 @import 'nav'
-// @import 'section'
-// @import 'video'
+@import 'body'
+@import 'section'
+@import 'video'
 // @import 'sidebar'
 // @import 'sliderswitch'

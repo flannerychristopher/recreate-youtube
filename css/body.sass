@@ -1,0 +1,78 @@
+// COLORS FOR WIREFRAMING
+.margin
+  background: #ade3ff
+#content
+  background: rgb(141, 255, 139)
+#upnext
+  background: rgb(235, 106, 156)
+
+
+// MOBILE FIRST DISPLAY
+
+.container
+  display: flex
+  width: 100%
+
+.wrapper
+  display: flex
+  flex-direction: column
+  height: 80vh
+  justify-content: flex-start
+
+#content,
+#upnext
+  width: 450px
+
+.margin
+  display: none
+  width: 100%
+
+body:after
+  content: "less than 450px"
+  font-size: 300%
+  font-weight: bold
+  position: fixed
+  bottom: 60px
+  width: 100%
+  text-align: center
+  background-color: hsla(1,60%,40%,0.7)
+  color: #fff
+
+
+// LARGER SCREEN DISPLAYS
+
+@media only screen and (min-width: 450px)
+  body:after
+    content: "450 to 650px"
+    background-color: hsla(90,60%,40%,0.7)
+
+  .margin
+    display: inline-block
+
+@media only screen and (min-width: 650px)
+  body:after
+    content: "650 to 1100px"
+    background-color: hsla(180,60%,40%,0.7)
+
+  .wrapper
+    flex-direction: row
+
+  .margin
+    display: none
+
+  #content
+    width: 640px
+  #upnext
+    min-width: 360px
+    max-width: 410px
+
+@media only screen and (min-width: 1100px)
+  body:after
+    content: "over 1100px"
+    background-color: hsla(270,60%,40%,0.7)
+
+  .margin
+    display: inline-block
+
+  #content
+    width: 850px

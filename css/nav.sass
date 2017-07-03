@@ -14,7 +14,7 @@
 
 nav
   background: $youtubewhite
-  @extend %flex
+  display: flex
   justify-content: space-between
   align-items: center
   flex-grow: 3
@@ -22,11 +22,11 @@ nav
   overflow: hidden
 
   #logodiv
-    @extend %flex
+    display: flex
     align-items: center
 
   #search
-    @extend %flex
+    display: flex
     align-items: center
     justify-content: flex-start
     height: 30px
@@ -52,7 +52,7 @@ nav
       height: 28px
       width: 60px
       background: $youtubelightgray
-      @extend %flex
+      display: flex
       align-items: center
       &:hover
         background: $youtubegray
@@ -62,7 +62,7 @@ nav
         margin-left: 12px
 
   #nav-buttons
-    @extend %flex
+    display: flex
     align-items: center
     flex-grow: 5
     justify-content: flex-end
