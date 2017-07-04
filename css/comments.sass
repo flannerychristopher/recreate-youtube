@@ -7,10 +7,15 @@
     margin-left: 15px
 
 #filtercomments
-  border-top: 1px solid $youtubemidgray
+  border: 1px solid $youtubegray
+  border-radius: 5px
   margin: 10px 0
-  background: Transparent
-  padding: 2px
+  background: $youtubelightgray
+  padding: 5px
+  font-size: 12px
+  font-weight: 600
+  appearance: none
+
 
 .commentwrapper
   display: block
@@ -27,9 +32,19 @@
         text-decoration: none
         color: $youtubedarkergray
         font-weight: 600
-      span
+      span:first-child
         color: $youtubemidgray
         margin-left: 5px
+      > span:nth-child(2)
+        margin-top: 5px
       div
+        // background: purple
         display: flex
+        justify-content: flex-start
+        align-content: center
         align-items: center
+        a
+          color: $youtubedarkergray
+
+#comments button
+  width: 100%

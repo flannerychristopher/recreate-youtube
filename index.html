@@ -13,7 +13,7 @@
 <body>
 
   <header>
-    <nav>
+    <nav class="splitcontent">
       <div id='logodiv'>
         <a href='#'>
           <img src='img/hamburger.png' id='hamburger'>
@@ -38,26 +38,24 @@
     </nav>
   </header>
   <div class="container">
-    <div class='margin'>margin</div>
+    <div class='margin'></div>
       <div class='wrapper'>
         <div id='content'>
           <section>
-
+<!-- VIDEO -->
             <div class="intrinsic-container intrinsic-container-16x9">
               <iframe src="https://www.youtube.com/embed/Dmjhew7K3jk?controls=1" allowfullscreen id='mainvideo'>
               </iframe>
             </div>
-
+<!-- TITLE/INFO -->
             <div class="well">
               <div id="titlewrapper">
                 <h1>SNL Casey Affleck Dunkin Donuts Commercial 2016 Boston Oscar Worthy</h1>
               </div>
-
               <div id="userwrapper">
                 <div class="usericon">
                   <span>M</span>
                 </div>
-
                 <div id="userinfo">
                   <strong>MikeT1831</strong>
                   <br>
@@ -68,10 +66,9 @@
                     </div>
                   </div>
                 </div> <!-- #userinfo -->
-              </div> <!-- #userwrapper -->
+              </div> <!-- #titlewrapper -->
 
-
-              <div id='actionbuttons'>
+              <div id='actionbuttons' class="splitcontent">
                 <div id='medias'>
                   <a href='#'>
                     <img src='/img/plus.png'>Add to
@@ -82,7 +79,7 @@
                   <a href='#'>
                     <img src='/img/dots.png'>More
                   </a>
-                </div>
+                </div> <!-- medias -->
                 <div id='likes'>
                   <button>
                     <img src='/img/thumbsup.png'>1,025
@@ -90,78 +87,157 @@
                   <button>
                     <img src='/img/thumbsdown.png'>60
                   </button>
-                </div>
-              </div>
+                </div> <!-- likes -->
+              </div> <!-- #actionbuttons -->
             </div> <!-- .well -->
 
+<!-- DESCRIPTION -->
             <div class="well" id='videodescription'>
               <strong>Published on Dec 17, 2016</strong>
               <p>SNL skit december 17th, 2016. it's so accurate to what you can find in a dunks in parts of Boston, it's scary...well done Casey and SNL.</p>
               <button id='showmorebutton'>SHOW MORE</button>
-            </div>
+            </div> <!-- .well #videodescription -->
 
+<!-- COMMENTS -->
             <div class="well" id='comments'>
               <strong>COMMENTS &bull; 31</strong>
               <div id='writecomment'>
                 <img src='img/blankavatar.png' class='usericon'>
                 <input type='text_area'></input>
-              </div>
-            <!-- </div> -->
+              </div> <!-- .#writecomment -->
 
-            <div>
+              <div>
+                <select name="filtercomments" id='filtercomments'>
+                  <option value="topcomments">Top comments &#9662;</option>
+                  <option value="newestcomments">Newest first</option>
+                </select>
 
-              <select name="filtercomments" id='filtercomments'>
-                <option value="topcomments">Top comments</option>
-                <option value="newestcomments">Newest first</option>
-              </select>
-
-              <div class='commentwrapper'>
-                <div class='comment'>
-                  <div class="usericon">
-                    <span>M</span>
-                  </div>
-                  <div class='commenter'>
-                    <a href='#'>JG Meath<span>6 months ago</span></a>
-                    <span>No, really. This is Massachusetts. This is real.</span>
-                    <div>
-                      <span>Reply &bull; 30</span>
-                      <a href='#'>
-                        <img src='/img/thumbsup.png'>
-                      </a>
-                      <a href='#'>
-                        <img src='/img/thumbsdown.png'>
-                      </a>
+                <div class='commentwrapper'>
+                  <div class='comment'>
+                    <div class="usericon">
+                      <span>M</span>
                     </div>
-                </div>
-              </div>
-              <div class='commentwrapper'>
-                <div class='comment'>
-                  <div class="usericon">
-                    <span>C</span>
+                    <div class='commenter'>
+                      <a href='#'>JG Meath<span>6 months ago</span></a>
+                      <span>No, really. This is Massachusetts. This is real.</span>
+                      <div>
+                        <a href='#'>Reply &bull; &nbsp; </a>
+                        <span> 30</span>
+                        <a href='#'>
+                          <img src='/img/thumbsup.png'>
+                        </a>
+                        <a href='#'>
+                          <img src='/img/thumbsdown.png'>
+                        </a>
+                      </div>
                   </div>
-                  <div class='commenter'>
-                    <a href='#'>J O<span>6 months ago</span></a>
-                    <span>funny. But not raunchy enough for true New Englanders. I have seen crazier mother fuckers than this at real Dunkin donuts. I like the cigarette out the door and the coffee cup at the windshield though! That's pretty accurate. Actually not an exaggeration. Have seen both in real life and crazier shit than that, even! haha﻿</span>
-                    <div>
-                      <span>Reply &bull; 27</span>
-                      <a href='#'>
-                        <img src='/img/thumbsup.png'>
-                      </a>
-                      <a href='#'>
-                        <img src='/img/thumbsdown.png'>
-                      </a>
+                </div> <!-- .commentwrapper -->
+                <div class='commentwrapper'>
+                  <div class='comment'>
+                    <div class="usericon">
+                      <span>C</span>
                     </div>
-                </div>
-              </div>
+                    <div class='commenter'>
+                      <a href='#'>J O<span>6 months ago</span></a>
+                      <span>funny. But not raunchy enough for true New Englanders. I have seen crazier people than this at real Dunkin donuts. I like the cigarette out the door and the coffee cup at the windshield though! That's pretty accurate. Actually not an exaggeration. Have seen both in real life and crazier shit than that, even! haha﻿</span>
+                      <div>
+                        <a href='#'>Reply &bull; &nbsp; </a>
+                        <span> 27</span>
+                        <a href='#'>
+                          <img src='/img/thumbsup.png'>
+                        </a>
+                        <a href='#'>
+                          <img src='/img/thumbsdown.png'>
+                        </a>
+                      </div>
+                  </div>
+                </div> <!-- .commentwrapper -->
 
-            </div>
+                <div>
+                  <button>Show more</button>
+                </div>
+
+            </div> <!-- .well #comments -->
 
           </section>
-        </div>
+        </div> <!-- content -->
+<!-- UPNEXT -->
+        <aside id='upnext'>
+          <div class="splitcontent">
+            <strong>Up next</strong>
+            <div class="spacecontent">
+              <span>Autoplay</span>
+              <div id="infoicon"> </div>
+              <label class="switch">
+                <input type="checkbox">
+                <div class="slider round"></div>
+              </label>
+            </div>
+          </div>
 
-        <div id='upnext'>upnext</div>
-      </div>
-    <div class='margin'>margin</div>
-  </div>
+          <ul>
+            <li class="spacecontent">
+              <div class='previewvideo'>
+                <img aria-hidden="true" alt="" src="https://i.ytimg.com/vi/rLwbzGyC6t4/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&amp;rs=AOn4CLCNi6X11FMTZgquANgSax5G1Q7MYg">
+              </div>
+              <div class='previewinfo'>
+                <a href='#'>Boston Accent Trailer - Late Night with Seth Myers</a>
+                <p><small>Late Night with Seth Myers
+                <br>3,597,450 views</small></p>
+              </div>
+            </li>
+
+            <li class="spacecontent">
+              <div class='previewvideo'>
+                <img aria-hidden="true" alt="" src="https://i.ytimg.com/vi/bRgsGeX4OoE/hqdefault.jpg?sqp=-oaymwEWCKgBEF5IWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLAltK3fziCbWnkEppTe__Pqjdc9Ag">
+              </div>
+              <div class='previewinfo'>
+                <a href='#'>Casey Affleck Doesn't Like Doing Boston Accents</a>
+                <p><small>Late Night with Seth Myers
+                <br>591,895 views</small></p>
+              </div>
+            </li>
+
+            <li class="spacecontent">
+              <div class='previewvideo'>
+                <img aria-hidden="true" alt="" src="https://i.ytimg.com/vi/Nms1pMCrOmo/hqdefault.jpg?sqp=-oaymwEWCKgBEF5IWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLAmKUK3ci7nGzORR_kku8NZLE8slA">
+              </div>
+              <div class='previewinfo'>
+                <a href='#'>Silent Night Hilarious SNL Skit with Casey Affleck 2016</a>
+                <p><small>Standupshow
+                <br>33,523</small></p>
+              </div>
+            </li>
+
+            <li class="spacecontent">
+              <div class='previewvideo'>
+                <img aria-hidden="true" alt="" src="https://i.ytimg.com/vi/sEQmNE8Cj1E/hqdefault.jpg?sqp=-oaymwEWCKgBEF5IWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLB7PvCK8l2aBHWKacxdpEQIsUM53g">
+              </div>
+              <div class='previewinfo'>
+                <a href='#'>Elves Snl 2016 with Casey Affleck</a>
+                <p><small>TVS
+                <br>26,421 views</small></p>
+              </div>
+            </li>
+
+            <li class="spacecontent">
+              <div class='previewvideo'>
+                <img aria-hidden="true" alt="" src="https://i.ytimg.com/vi/q2CA0_UE4yU/hqdefault.jpg?sqp=-oaymwEWCKgBEF5IWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLBoUddQ51H2W3iTDz2aOiFjZebWmQ">
+              </div>
+              <div class='previewinfo'>
+                <a href='#'>Tom Brady's Wicked Accent</a>
+                <p><small>Funny or Die
+                <br>3,286,976</small></p>
+              </div>
+            </li>
+
+          </ul>
+
+          <button id='showmorebutton'>SHOW MORE</button>
+        </aside> <!-- upnext -->
+
+      </div> <!-- .wrapper -->
+    <div class='margin'></div>
+  </div> <!-- .container -->
 </body>
 </html>
