@@ -288,7 +288,7 @@ section {
   -ms-flex-align: center;
   align-items: center;
   height: 48px;
-  width: 48px;
+  min-width: 48px;
   font-size: 25px;
   background: #aa6f6f; }
 
@@ -341,10 +341,11 @@ section {
         -ms-flex-align: center;
         align-items: center;
         background: #fff;
-        color: #ccc;
         border: 1px solid #807b7b;
         height: 22px;
         width: 22px; }
+        #userwrapper #userinfo #subscribe div span {
+          color: #807b7b; }
 
 #actionbuttons {
   margin-top: 10px;
@@ -505,7 +506,7 @@ section {
   width: 100%; }
 
 aside {
-  font-size: 12px;
+  font-size: 14px;
   padding: 10px; }
 
 #infoicon {
@@ -528,7 +529,8 @@ ul {
     border-bottom: 1px solid #ccc; }
 
 .previewinfo {
-  margin-left: 10px; }
+  margin-left: 10px;
+  width: 100%; }
   .previewinfo a {
     text-decoration: none;
     font-size: 16px;
